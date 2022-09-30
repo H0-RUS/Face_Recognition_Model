@@ -8,9 +8,9 @@ labels = ["s1", "s2", "s3", "Ko Taehyeon"]
 
 base_dir = './IMG/train/'
 
-face_classifier = cv2.CascadeClassifier('C:\HORUS\IMG_Preprocessing\FOR_OFFLINE\Cascades\haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier('C:\HORUS\Face_RM\Cascades\haarcascade_frontalface_default.xml')
 recognizer = cv2.face.LBPHFaceRecognizer_create()
-recognizer.read('C:\HORUS\IMG_Preprocessing\FOR_OFFLINE\model_2022-09-27 01_36_33.098850.xml')
+recognizer.read('C:\HORUS\Face_RM\model_2022-09-27 01_36_33.098850.xml')
 
 cap = cv2.VideoCapture(0)
 
