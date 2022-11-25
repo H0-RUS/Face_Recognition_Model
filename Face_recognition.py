@@ -37,7 +37,7 @@ while True:
         elif conf_masked>50 and conf_masked > conf_origin:
             font = cv2.FONT_HERSHEY_SIMPLEX
             name = labels[id_masked-1]
-            cv2.putText(img, f'{name}, coef:{math.ceil(conf_masked)}%', (x,y), font, 1, (0, 0, 255), 2)
+            cv2.putText(img, f'{name}, coef:{math.ceil(conf_masked)}%', (x,y), font, 1, (0, 255, 0), 2)
             cv2.rectangle(img, (x,y), (x+w, y+h), (0, 255, 0), 2)
         
     cv2.imshow('Sample', img)
